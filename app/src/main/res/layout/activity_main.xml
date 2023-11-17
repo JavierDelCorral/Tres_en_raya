@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#36FCFC"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:fontFamily="sans-serif-black"
+        android:text="inserte jugadores"
+        android:textAlignment="center"
+        android:textColor="#667070"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/j1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/j1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="42dp"
+        android:ems="10"
+        android:hint="Jugador 1"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/j2"
+        app:layout_constraintStart_toStartOf="@+id/tv"
+        app:layout_constraintTop_toBottomOf="@+id/tv" />
+
+    <EditText
+        android:id="@+id/j2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="75dp"
+        android:ems="10"
+        android:hint="Jugador 2"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btJugar"
+        app:layout_constraintStart_toStartOf="@+id/j1"
+        app:layout_constraintTop_toBottomOf="@+id/j1" />
+
+    <Button
+        android:id="@+id/btJugar"
+        android:layout_width="213dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginBottom="148dp"
+        android:onClick="jugar"
+        android:text="JUGAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/j2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tablerotresenraya" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
